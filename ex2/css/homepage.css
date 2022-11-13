@@ -1,0 +1,213 @@
+
+@font-face {
+  font-family: 'fontAwesone';
+  src: url(../fonts//fontawesome-webfont.eot);
+  src: url(../fonts//fontawesome-webfont.svg) format("svg"),
+  url(../fonts//fontawesome-webfont.woff2) format("woff2")
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: "fontAwesone", sans-serif ;
+-webkit-tap-highlight-color: transparent;
+scroll-behavior: smooth;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  color: white;
+  padding: 0 20px; 
+
+}
+.list_menu  {
+ display: flex;
+}
+
+
+.arrow-down {
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+.arrow-up {
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+
+.list_menu-item {
+  padding: 15px 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.more {
+  position: relative;
+}
+.more a {
+    padding: 15px 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  cursor: pointer;
+max-width: 100%;
+}
+.more a:hover {
+    background-color: #ccc;
+  color: black;
+}
+.more.active .dropdown {
+  display: block;
+}
+.more .arrow-up {
+  display: none;
+}
+.more.active .arrow-up  {
+  display: inline-block;
+}
+.more.active .arrow-down  {
+  display: none;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  display: none;
+}
+
+
+.list_menu-item:hover{
+  background-color: #ccc;
+  color: black;
+  border-top-color: black;
+}
+
+.list_menu-item:hover .arrow-down,
+.list_menu-item:hover .arrow-up{
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.container {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.city-card {
+
+  border-bottom: 1px solid black;
+}
+.city-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.city-info {
+  padding: 20px;
+}
+
+.name{
+  font-size: 18px;
+
+margin-bottom: 10px;  font-weight: 600;
+}
+.md {
+  display: none;
+}
+.btn-menu {
+  display: none;
+}
+.home,
+.home a {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+
+
+  .header {
+    padding: 0;
+  }
+
+ 
+
+  .list_menu {
+    transition: .2s;
+    position: absolute;
+    top: -288px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    transform: .2s;
+    z-index: 1;
+  
+  }
+   .list_menu.active {
+    top: 100%;
+   }
+
+  .list_menu-item {
+    width: 100%;
+    
+  }
+  .list_menu .list_menu-item {
+    
+  }
+  .more {
+    display: none;
+  }
+  .md {
+    display: flex;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .btn-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 26px;
+  }
+  .list_menu-item.home-link {
+     padding: 15px 26px;
+    display: inline-block;
+    width: auto;
+  }
+  
+}
+

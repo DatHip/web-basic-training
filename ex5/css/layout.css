@@ -1,0 +1,180 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+table {
+  width: 100%;
+  border-collapse:  collapse;
+  margin: auto;
+
+}
+
+.header {
+  background-color: red;
+  height: 70px;
+}
+
+
+.btn-menu {
+  margin-left: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+}
+.menu-title {
+  padding: 20px 30px ;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-size: 20px;
+ display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-title:hover {
+    transform: .1,5s ;
+     background-color: #D9D9D9;
+color: black;
+cursor: pointer;
+
+}
+
+.menu-title:hover span:not(.box3) {
+background-color: black;
+}
+.menu-title:hover .box3 .arrow-up {
+border-bottom: 25px solid black;
+}
+.menu-title.active .box3 .arrow-up {
+border-bottom: 25px solid black;
+}
+
+.avatr {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+    background-color: #D9D9D9;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.container   {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.slider {
+  height: calc(100vh - 140px );
+  background-color: #800080;
+  width: 20%;
+  min-width: 210px;
+}
+
+.content {
+  width: 80%;
+  height: calc(100vh - 140px );
+
+}
+
+.footer {
+   background-color: #008000;
+}
+
+.footer td {
+  padding: 0 50px;
+}
+
+/* box */
+
+.menu-title.active {
+    background-color: #D9D9D9;
+  color: black;
+}
+
+
+.box1 {
+  width: 30px;
+  height: 30px;
+   background-color: #D9D9D9;
+  margin-right: 20px;
+  display: inline-block;
+}
+.box2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+     background-color: #D9D9D9;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+margin-right: 20px;
+  border-bottom: 25px solid #411818;
+}
+
+.btn-close {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  .btn-menu {
+    display: block;
+  }
+
+  .container-content {
+    width: 100%;
+  }
+  .menu-title {
+    
+    width: 70%;
+  }
+  .btn-close {
+    display: inline-block;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  .fa-solid.fa-xmark {
+    font-size: 30px;
+  }
+  .menu-btn {
+    align-items: flex-start;
+  }
+  .button-menu {
+    visibility: visible ;
+    color: white;
+  }
+
+  .button-menu i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .content {
+    width: 100% !important ;
+  }
+  .slider{
+   transition: .2s linear;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 70px;
+    left: -100%;
+    position: fixed;
+    left: -100%;
+    height: calc(100vh - 70px);
+  }
+
+  .body.active .slider{
+        left: 0;
+    width: 100%;
+  }
+}

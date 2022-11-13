@@ -1,0 +1,158 @@
+.clear {
+  clear: both;
+}
+
+* {
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+.header {
+   background-color: #FF0000;
+ padding: 15px 30px;
+}
+.container {
+  height: calc(100vh - 140px);
+}
+.footer {
+  background-color: #008000;
+height:70px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 30px;
+}
+
+.sider {
+  width: 25%;
+  float: left;
+  height: 100%;
+  background-color: #800080;
+  
+}
+.container-content {
+  width: 75%;
+float: left;
+  height: 100%;
+  position: relative;
+}
+
+.container-content span {
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%);
+}
+.avatar {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.btn-menu {
+float: left;
+display: none;
+}
+
+.btn-close {
+  display: none;
+}
+
+
+.menu-title {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px 30px ;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.menu-title.active {
+    background-color: #D9D9D9;
+  color: black;
+}
+
+
+.box1 {
+  width: 30px;
+  height: 30px;
+   background-color: #D9D9D9;
+  margin-right: 20px;
+}
+.box2 {
+  width: 30px;
+  height: 30px;
+     background-color: #D9D9D9;
+margin-right: 20px;
+border-radius: 50%;
+}
+
+.menu-title:hover {
+  transform: .1,5s ;
+     background-color: #D9D9D9;
+color: black;
+cursor: pointer;
+}
+.menu-title:hover span:not(.box3) {
+background-color: black;
+}
+.menu-title:hover .box3 .arrow-up {
+border-bottom: 25px solid black;
+}
+.menu-title.active .box3 .arrow-up {
+border-bottom: 25px solid black;
+}
+
+
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+margin-right: 20px;
+  border-bottom: 25px solid #D9D9D9;
+
+}
+
+
+@media (max-width: 719px) {
+  .sider {
+    transition: .2s linear;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 120px;
+    left: -100%;
+  }
+  
+  .sider.active {
+    left: 0;
+    width: 100%;
+     z-index: 1;
+  }
+  .container-content {
+    width: 100%;
+  }
+  .menu-title {
+    
+    width: 70%;
+  }
+  .btn-close {
+    display: block;
+    padding: 30px;
+    color: white;
+  }
+ 
+  .menu-btn {
+    align-items: flex-start;
+   
+  }
+  .btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
