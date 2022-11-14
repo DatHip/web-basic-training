@@ -121,6 +121,10 @@ a {
   border-bottom-color: black;
 }
 
+.main {
+  min-width: 300px;
+}
+
 .container {
   margin-top: 48px;
   width: 100%;
