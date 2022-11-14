@@ -1,1 +1,1 @@
-# webbasicc
+# web-basic-training
