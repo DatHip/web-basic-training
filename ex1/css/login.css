@@ -1,206 +1,221 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family: "PoppinsBold";
-    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+  font-family: "PoppinsBold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
-    font-family: "FontAwesome";
-    src: url(../fonts/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.ttf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: "FontAwesome";
+  src: url(../fonts/FontAwesome/fa-solid-900.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "FontAwesomeband";
-    src: url(../fonts/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.ttf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: "FontAwesomeBand";
+  src: url(../fonts/FontAwesome/fa-brands-400.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* icons */
 .fa {
-    font: normal normal normal 14px/1 FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-    text-rendering: auto;
+  font: normal normal normal 14px/1 FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
 }
 
 .fa-user:before {
-    content: "\f007";
+  content: "\f007";
 }
 
 .fa-lock:before {
-    font: normal normal normal 14px/1 FontAwesome;
-    content: "\f023";
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f023";
 }
 
 .fab {
-    font: normal normal normal 14px/1 FontAwesomeband;
+  font: normal normal normal 14px/1 FontAwesomeBand;
 }
 
 .fa-facebook-f:before {
-    content: "\f39e";
-
+  content: "\f39e";
 }
 
 .fa-twitter:before {
-    content: "\f099";
+  content: "\f099";
 }
 
 .fa-google:before {
-    content: "\f1a0";
+  content: "\f1a0";
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
-    background-image: url(../images/bg-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url(../images/bg-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
-
 .login {
-    width: 100%;
-    max-width: 600px;
-    height: 80%;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
-    width: 100%;
+  width: 100%;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    font-family: 'PoppinsBold', sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: "PoppinsBold", sans-serif;
 }
 
 .form-text {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form-text-input {
-    padding: 0 10px 10px 10px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
 }
 
 .form-text label {
-    font-weight: 400;
-    font-size: 14px;
-    color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
 }
 
 .form-text input {
-    margin-left: 10px;
-    outline: none;
-    border: none;
-    width: 100%;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
 }
 
 .forgot {
-    font-size: 12px;
-    font-weight: 300;
-    text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: right;
 }
 
 .btn-login {
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-    border-radius: 100rem;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    margin-top: 30px;
-    background: linear-gradient(to right, rgba(33, 201, 230, 1) 0%, rgba(199, 46, 248, 1) 50%, rgba(255, 9, 255, 1) 100%);
-    color: white;
-    font-size: 18px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border-radius: 100rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 201, 230, 1) 0%,
+    rgba(199, 46, 248, 1) 50%,
+    rgba(255, 9, 255, 1) 100%
+  );
+  color: white;
+  font-size: 18px;
 }
 
-.socail {
-    margin-top: 30px;
-    color: #333;
+.social {
+  margin-top: 30px;
+  color: #333;
 }
 
-.socail p {
-    text-align: center;
+.social p {
+  color: #333;
+  text-align: center;
 }
 
 .sign-up {
-    margin-top: auto;
+  text-align: center;
+  margin-top: auto;
 }
 
-.socail-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 20px;
+.sign-up > p {
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.socail-list i {
-    color: white;
+.sign-up p:last-child {
+  font-size: 18px;
 }
 
-.socail-list_item {
-    width: 50px;
-    height: 50px;
-    border-radius: 100rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.socail-list_item i {
-    font-size: 20px;
+.social-list i {
+  color: white;
 }
 
-.socail-list_item:first-child {
-    background-color: #194585;
+.social-list_item {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.socail-list_item:nth-child(2) {
-    background-color: #1D9BF0;
+.social-list_item i {
+  font-size: 20px;
 }
 
-.socail-list_item:last-child {
-    background-color: #EA4335;
+.social-list_item:first-child {
+  background-color: #194585;
+}
+
+.social-list_item:nth-child(2) {
+  background-color: #1d9bf0;
+}
+
+.social-list_item:last-child {
+  background-color: #ea4335;
 }

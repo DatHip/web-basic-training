@@ -1,20 +1,18 @@
-
 @font-face {
-  font-family: 'fontAwesone';
-  src: url(../fonts//fontawesome-webfont.eot);
-  src: url(../fonts//fontawesome-webfont.svg) format("svg"),
-  url(../fonts//fontawesome-webfont.woff2) format("woff2")
+  font-family: "fontAwesome";
+  src: url(../fonts/fontAwesomeWebFont.eot);
+  src: url(../fonts/fontAwesomeWebFont.svg) format("svg"),
+    url(../fonts/fontAwesomeWebFont.woff2) format("woff2");
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: "fontAwesone", sans-serif ;
--webkit-tap-highlight-color: transparent;
-scroll-behavior: smooth;
+  font-family: "fontAwesome", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
-
 
 a {
   color: white;
@@ -27,17 +25,15 @@ a {
   right: 0;
   left: 0;
   background-color: black;
-  display:flex;
-  align-items:center;
-  justify-content:start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   color: white;
-  padding: 0 20px; 
-
+  padding: 0 20px;
 }
-.list_menu  {
- display: flex;
+.list_menu {
+  display: flex;
 }
-
 
 .arrow-down {
   margin-left: 6px;
@@ -56,7 +52,6 @@ a {
   border-bottom: 8px solid white;
 }
 
-
 .list_menu-item {
   padding: 15px 26px;
   display: flex;
@@ -67,15 +62,15 @@ a {
   position: relative;
 }
 .more a {
-    padding: 15px 26px;
+  padding: 15px 26px;
   display: flex;
   align-items: center;
   cursor: pointer;
   cursor: pointer;
-max-width: 100%;
+  max-width: 100%;
 }
 .more a:hover {
-    background-color: #ccc;
+  background-color: #ccc;
   color: black;
 }
 .more.active .dropdown {
@@ -84,13 +79,12 @@ max-width: 100%;
 .more .arrow-up {
   display: none;
 }
-.more.active .arrow-up  {
+.more.active .arrow-up {
   display: inline-block;
 }
-.more.active .arrow-down  {
+.more.active .arrow-down {
   display: none;
 }
-
 
 .dropdown {
   position: absolute;
@@ -100,15 +94,14 @@ max-width: 100%;
   display: none;
 }
 
-
-.list_menu-item:hover{
+.list_menu-item:hover {
   background-color: #ccc;
   color: black;
   border-top-color: black;
 }
 
 .list_menu-item:hover .arrow-down,
-.list_menu-item:hover .arrow-up{
+.list_menu-item:hover .arrow-up {
   border-top-color: black;
   border-bottom-color: black;
 }
@@ -117,13 +110,11 @@ max-width: 100%;
   margin-top: 48px;
   margin-bottom: 48px;
   margin-left: 200px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-
 
 .city-card {
   display: none;
@@ -131,7 +122,6 @@ max-width: 100%;
 }
 .city-card.active {
   display: block;
-
 }
 .city-card img {
   width: auto;
@@ -143,10 +133,11 @@ max-width: 100%;
   padding: 20px;
 }
 
-.name{
+.name {
   font-size: 18px;
 
-margin-bottom: 10px;  font-weight: 600;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 .md {
   display: none;
@@ -160,16 +151,16 @@ margin-bottom: 10px;  font-weight: 600;
 }
 
 .footer {
-    position: fixed;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
   background-color: black;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 15px 20px; 
+  padding: 15px 20px;
 }
 
 .slide-left {
@@ -177,13 +168,13 @@ margin-bottom: 10px;  font-weight: 600;
   bottom: 48px;
   top: 48px;
   background-color: #333;
- max-width: 200px;
- width: 100%;
+  max-width: 200px;
+  width: 100%;
 }
 
 .item-menu-left {
   color: white;
-  padding: 15px  15px 15px 46px ;
+  padding: 15px 15px 15px 46px;
   cursor: pointer;
 }
 
@@ -211,7 +202,7 @@ margin-bottom: 10px;  font-weight: 600;
   }
 
   .list_menu {
-    transition: .2s;
+    transition: 0.2s;
     position: absolute;
     top: -288px;
     left: 0;
@@ -219,21 +210,17 @@ margin-bottom: 10px;  font-weight: 600;
     background-color: black;
     flex-direction: column;
     width: 100%;
-    transform: .2s;
+    transform: 0.2s;
     z-index: 1;
-  
   }
-   .list_menu.active {
+  .list_menu.active {
     top: 100%;
-   }
+  }
 
   .list_menu-item {
     width: 100%;
-    
   }
-  .list_menu .list_menu-item {
-    
-  }
+
   .more {
     display: none;
   }
@@ -247,7 +234,7 @@ margin-bottom: 10px;  font-weight: 600;
     align-items: center;
     background-color: black;
   }
-  
+
   .btn-menu {
     display: block;
     width: 30px;
@@ -256,10 +243,8 @@ margin-bottom: 10px;  font-weight: 600;
     margin-right: 26px;
   }
   .list_menu-item.home-link {
-     padding: 15px 26px;
+    padding: 15px 26px;
     display: inline-block;
     width: auto;
   }
-  
 }
-
