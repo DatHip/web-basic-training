@@ -38,28 +38,31 @@ Cho 2 CSS statements như sau:
     box-shadow: none !important;
   }
 }
-Đây là loại CSS statements gì? Mục đích của từ khóa @media print là gì?
-Tìm tất cả các từ khóa tương tự @media print trong thư viện và giải thích mục đích của nó? 
+
+Đây là loại CSS statements gì? Mục đích của từ khóa @media print là gì? : Loại CSS statements At-rules , Mục đích của từ khóa @media print là để Dùng cho máy in.
+Tìm tất cả các từ khóa tương tự @media print trong thư viện và giải thích mục đích của nó? : Mục đích dùng để phân đoạn css thành nhiều phần để tương thích với cách kích thước màn hình , máy in , responsive cho website
 
 p,h2,h3 {
     orphans: 3;
     widows: 3;
   }
-Đây là loại CSS statement gì? Giải thích p,h2,h3
+Đây là loại CSS statement gì? Giải thích p,h2,h3: Loại css Ruleset , selector tất cả thẻ p, h2 , h3
 
 CSS Selector:
 Tìm trong thư viện ví dụ về các loại SELECTOR sau: (nếu không có loại này trong thư viện, hãy tìm ví dụ bên ngoài)
- Type, class, and ID selectors
- Attribute selectors
- Pseudo-classes and pseudo-elements
- Combination CSS Selector
-   Descendant selector (space)
-   Child selector (>)
-   Adjacent sibling selector (+)
-   General sibling selector (~)
+ Type, class, and ID selectors: Type: { inline CSS : <p style = "color:#009900;> , Internal CSS : style trong file html, External CSS : css chứa file css} , class: .table , id: #home.
+ Attribute selectors : a[target="_blank"]
+ Pseudo-classes and pseudo-elements  Pseudo-classes: a:hover, a:first-child, Pseudo-elements: h1::after , p: p::first-letter.
+ Combination CSS Selector 
+   Descendant selector (space) :  div p
+   Child selector (>) : div > p (thẻ div có con đầu tiên là thẻ p  )
+   Adjacent sibling selector (+) : div + p (thẻ div có liền kề là thẻ p )
+   General sibling selector (~) : div ~ p (thẻ div nằm cùng hàng chọn tất cả thẻ p phía dưới )
 
 3. Cấu trúc CSS statement trong thư viện CSS bootstrap 3.4.1
-Em hãy phân nhóm CSS statement trong thư viện CSS bootstrap 3.4.1 theo cách hiểu của em. (Phân nhóm theo mục đích sử dụng)
+Em hãy phân nhóm CSS statement trong thư viện CSS bootstrap 3.4.1 theo cách hiểu của em. (Phân nhóm theo mục đích sử dụng) 
+
+
 
 Tìm hiểu về nhóm LAYOUT:
 Tìm các CSS statement phục vụ xây dựng layout và trả lời câu hỏi:
