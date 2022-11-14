@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  color: white;
+  padding: 5px 15px;
+  background-color: rgb(52, 132, 243);
+  border-radius: 4px;
+}
+.collapse {
+  padding: 15px 30px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.collapse.in {
+  visibility: visible;
+}
+
+.coll {
+  max-width: 200px;
+  width: 100%;
+}
+.login {
+}

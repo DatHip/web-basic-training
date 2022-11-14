@@ -22,6 +22,7 @@ Toàn bộ
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 gọi là gì trong ruleset? : Declaration block
 
 CSS Statement:
@@ -46,6 +47,7 @@ p,h2,h3 {
     orphans: 3;
     widows: 3;
   }
+
 Đây là loại CSS statement gì? Giải thích p,h2,h3: Loại css Ruleset , selector tất cả thẻ p, h2 , h3
 
 CSS Selector:
@@ -55,34 +57,29 @@ Tìm trong thư viện ví dụ về các loại SELECTOR sau: (nếu không có
  Pseudo-classes and pseudo-elements  Pseudo-classes: a:hover, a:first-child, Pseudo-elements: h1::after , p: p::first-letter.
  Combination CSS Selector 
    Descendant selector (space) :  div p
-   Child selector (>) : div > p (thẻ div có con đầu tiên là thẻ p  )
+   Child selector (>) : div > p (thẻ div có con đầu tiên là thẻ p  ) 
    Adjacent sibling selector (+) : div + p (thẻ div có liền kề là thẻ p )
    General sibling selector (~) : div ~ p (thẻ div nằm cùng hàng chọn tất cả thẻ p phía dưới )
 
 3. Cấu trúc CSS statement trong thư viện CSS bootstrap 3.4.1
+
 Em hãy phân nhóm CSS statement trong thư viện CSS bootstrap 3.4.1 theo cách hiểu của em. (Phân nhóm theo mục đích sử dụng) 
-
-
+ : Phân nhóm:
+     nhóm 1 select các thẻ tùy chỉnh lại css mặc định.
+     nhóm 2 font-face -> .glyphicon dùng để thiết lập icon.
+     nhóm 3 layout dùng để căn chỉnh, chia layout, responsive.
+     nhóm 4 thiết lập style cho các class thành phần
 
 Tìm hiểu về nhóm LAYOUT:
 Tìm các CSS statement phục vụ xây dựng layout và trả lời câu hỏi:
-- Phân biệt container và container-fluid
-- Boostrap Grid System mặc định chia màn hình thành bao nhiêu cột, khoảng cách giữa các cột là bao nhiêu px?
-- Boostrap Grid System sử dụng các break-point nào?
-- Tìm hiểu bootstrap làm thế nào để các từ khóa sm, sm, md, lg và xl hoạt động
-- Tìm các khai báo ảnh hưởng đến z-index trong thư viện bootstrap
-Tìm hiểu về nhóm Component:
-- Responsive embed là gì? Tìm phần khai báo về Responsive embed trong thư viện bootstrap 3.4.1
+- Phân biệt container và container-fluid : container chiều rộng cố định , container-fluid full chiều rộng.
+- Boostrap Grid System mặc định chia màn hình thành bao nhiêu cột, khoảng cách giữa các cột là bao nhiêu px? : chia thành 12 cột và khoảng cách 30px (15px của mỗi 1 bên cột)
+- Boostrap Grid System sử dụng các break-point nào? Phones xs (<768px), Tablets sm  (>= 768px), Desktops màn hình tầm trung md (>= 992px), Desktops màn hình lớn(>= 1200px) lg
+- Tìm hiểu bootstrap làm thế nào để các từ khóa sm, sm, md, lg và xl hoạt động : sử dụng CSS statements At-rules @media 
 
+- Tìm các khai báo ảnh hưởng đến z-index trong thư viện bootstrap : dropdown form-control , btn-group  , navbar, pagination, modal, listgr , tooltip,popover
 
-
-
-
-
-
-
-
-
-
-
-
+Tìm hiểu về nhóm Component: 
+- Responsive embed là gì? Tìm phần khai báo về Responsive embed trong thư viện bootstrap 3.4.1 . 
+Cho phép trình duyệt xác định kích thước video hoặc trình chiếu dựa trên chiều rộng của khối chứa chúng bằng cách tạo tỷ lệ sẽ chia tỷ lệ phù hợp trên mọi thiết bị.
+.embed-responsive item 16y9 4by3 video embed

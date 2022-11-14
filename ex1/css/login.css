@@ -80,6 +80,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  min-width: 280px;
 }
 
 .login {
@@ -218,4 +219,10 @@ h1 {
 
 .social-list_item:last-child {
   background-color: #ea4335;
+}
+
+@media (max-width: 720px) {
+  .login {
+    padding: 20px;
+  }
 }
