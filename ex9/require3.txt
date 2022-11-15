@@ -1,2 +1,5 @@
 # Customize Bootstrap
 Trình bày cách customize bootstrap 3.4.1 theo mục đích sử dụng
+
+Cách customize : tạo file customize.css mới và import sau file css của bootstrap
+trong file ta sẽ ghì đè lại các giá trị , hoặc có thể customize trước khi tải bootstrap.
