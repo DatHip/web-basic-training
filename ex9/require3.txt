@@ -2,4 +2,4 @@
 Trình bày cách customize bootstrap 3.4.1 theo mục đích sử dụng
 
 Cách customize : tạo file customize mới và import sau file  của bootstrap
-trong file ta sẽ ghì đè lại các giá trị , hoặc có thể customize trước khi tải bootstrap.
+trong file ta sẽ ghì đè hoặc thêm mới , hoặc có thể customize trước khi tải bootstrap.
