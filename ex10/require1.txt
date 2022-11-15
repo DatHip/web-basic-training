@@ -1,9 +1,12 @@
 #Web Theme
-Theme trong lập trình web là gì?
+Theme trong lập trình web là gì? : Là 1 giao diện website, bộ mặt của website, cung cấp các layout đẹp và giúp cho website có được thêm nhiều màu sắc đa dạng, những tính năng tốt để website có thể hoạt động một cách trơn tru. gồm màu sắc, hình ảnh ,sắc thái 
 
-Less là gì?
-Build file card.less thành card.css
+Less là gì? LESS là một CSS preprocessor giúp chúng ta viết gắn gọn và hiệu quả hơn, đồng thời cũng dễ quản lý hơn bằng cách thêm vào CSS các thành phần động như biến, mixins, toán tử và hàm.
+
+Build file card.less thành card.css 
+
 Dùng card.css để sử dụng trong file card.html
+
 Thử thay đổi các yếu tố trong card-new.less để biên dịch ra theme mới trong file card-new.css
 
 Tìm hiểu sâu hơn về lập trình Less để có thể tùy biến theme theo ý thích ở đây:

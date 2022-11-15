@@ -12,8 +12,8 @@
         element.id +
         '"]'
     );
-    this.transitioning = null;
 
+    this.transitioning = null;
     if (this.options.parent) {
       this.$parent = this.getParent();
     } else {
@@ -154,9 +154,6 @@
     return $(document).find(target);
   }
 
-  // COLLAPSE PLUGIN DEFINITION
-  // ==========================
-
   function Plugin(option) {
     return this.each(function () {
       var $this = $(this);
@@ -178,9 +175,6 @@
 
   $.fn.collapse = Plugin;
   $.fn.collapse.Constructor = Collapse;
-
-  // COLLAPSE DATA-API
-  // =================
 
   $(document).on("click", '[data-toggle="collapse"]', function (e) {
     var $this = $(this);

@@ -1,9 +1,12 @@
 Nghiên cứu thư viện JAVASCRIPT Bootstrap version 3.4.1
 
-Mở file js/bootstrap-3.4.1.js và trả lời ngắn gọn các câu hỏi bên dưới:
+Mở file js/bootstrap-3.4.1.js và trả lời ngắn gọn các câu hỏi bên dưới: 
 
 1. Bootstrap javascript build on top của thư viện javascript nào? : Bootstrap
-2. Sử dụng bootstrap js để tạo ra một collapse button như trong file demo. Khi click vào button thì sẽ hiện thị nội dung hoặc ẩn nội dung. 
-3. Giải thích xem bootstrap js đã làm như thế nào để thực hiện việc đó.
-4. Không import toàn bộ thư viện CSS và thư viện JS của bootstrap mà tự tạo ra file css và js với nội dung được trích ra từ thư viện bootstrap (copy sang chứ không tự code, để làm demo tương tự)
+2. Sử dụng bootstrap js để tạo ra một collapse button như trong file demo.
+
+3. Giải thích xem bootstrap js đã làm như thế nào để thực hiện việc đó. sử dụng jquery
+selector tới btn và thẻ id cùng với data-target ,  Khi click vào button thì sẽ hiện thị nội dung hoặc ẩn nội dung. khi click vào nếu thẻ collapse có class in thì sẽ xóa class in, vào xóa class collapsed tại btn  
+
+4. Không import toàn bộ thư viện CSS và thư viện JS của bootstrap mà tự tạo ra file css và js với nội dung được trích ra từ thư viện bootstrap (copy sang chứ không tự code, để làm demo tương tự)  
 
